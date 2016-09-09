@@ -2,7 +2,7 @@ const assert = require('chai').assert;
 const npmChecker = require('../index.js');
 
 describe('test npm-checker', function() {
-	it('should return a resovled promise - package exists', function(done) {
+	it('should return a resolved promise - package exists', function(done) {
 		npmChecker('http-fetcher')
 			.then(res => {
 				assert.equal(res, true);
@@ -12,7 +12,7 @@ describe('test npm-checker', function() {
 				console.log(err);
 			});
 	});
-	it('should return a resovled promise - package doesn\'t exist', function(done) {
+	it('should return a resolved promise - package doesn\'t exist', function(done) {
 		npmChecker('non-existing-package')
 			.then(res => {
 				assert.equal(res, true);
