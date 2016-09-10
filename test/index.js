@@ -5,7 +5,7 @@ describe('test npm-checker', function() {
 	it('should return a resolved promise - package exists', function(done) {
 		npmChecker('http-fetcher')
 			.then(res => {
-				assert.equal(res, true);
+				assert.typeOf(res, 'object');
 				done();
 			})
 			.catch(err => {
@@ -15,7 +15,7 @@ describe('test npm-checker', function() {
 	it('should return a resolved promise - package doesn\'t exist', function(done) {
 		npmChecker('non-existing-package')
 			.then(res => {
-				assert.equal(res, true);
+				assert.equal(res, false);
 				done();
 			})
 			.catch(err => {
@@ -25,10 +25,11 @@ describe('test npm-checker', function() {
 	it('should return a rejected promise - something wrong happened', function(done) {
 		npmChecker('non-existing-package')
 			.then(res => {
-				console.log(res);
+				assert.equal(res, false);
+				done();
 			})
 			.catch(err => {
-				assert.equal(res, false);
+				assert.typeOf(res, 'object');
 				done();
 			});
 	});
