@@ -1,4 +1,4 @@
-# npm-checker
+# npm-checker [![Build Status](https://travis-ci.org/rajikaimal/npm-checker.svg?branch=master)](https://travis-ci.org/rajikaimal/npm-checker)
 
 Check package exists on npmjs.com
 
