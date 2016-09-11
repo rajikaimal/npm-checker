@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const httpFetcher = require('http-fetcher');
 
 module.exports = function(packageName) {
