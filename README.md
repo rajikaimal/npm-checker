@@ -1,4 +1,4 @@
-# npm-checker [![Build Status](https://travis-ci.org/rajikaimal/npm-checker.svg?branch=master)](https://travis-ci.org/rajikaimal/npm-checker)
+# npm-checker [![Build Status](https://travis-ci.org/rajikaimal/npm-checker.svg?branch=master)](https://travis-ci.org/rajikaimal/npm-checker) [![Greenkeeper badge](https://badges.greenkeeper.io/rajikaimal/npm-checker.svg)](https://greenkeeper.io/)
 
 Check package exists on npmjs.com
 
